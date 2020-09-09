@@ -16,8 +16,9 @@
 
 package com.example.android.android_me.ui;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.android.android_me.R;
 
@@ -40,5 +41,7 @@ public class AndroidMeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_android_me);
 
         // TODO (5) Create a new BodyPartFragment instance and display it using the FragmentManager
+        BodyPartFragment bodyPartFragment = BodyPartFragment.getInstance();
+        getSupportFragmentManager().beginTransaction().add(R.id.fragment_container,bodyPartFragment).commit();
     }
 }
