@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity implements MasterListFragmen
     private String HEAD_INDEX = "head_index";
     private String BODY_INDEx = "body_index";
     private String LEG_INDEX = "leg_index";
-
+    private boolean mTwoPanel = false;
 
     private int headIndex = 0;
     private int bodyIndex = 0;
@@ -43,6 +43,7 @@ public class MainActivity extends AppCompatActivity implements MasterListFragmen
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
 
     }
 
